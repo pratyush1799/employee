@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
 <title>Employee</title>
-	<link rel="stylesheet" href="/updateEmployee/updateEmployee.css">
+	<link rel="stylesheet" th:href="@{/css/updateEmployee.css}">
 </head>
 <body>
 	<div class="container">
@@ -15,19 +15,19 @@
 				<table>
 					<tr>
 						<td>Emp Id:</td>
-						<td><input type=text name="id" id="ip"></td>
+						<td><input type=text name="id" id="ip" placeholder="Enter Emp Id"></td>
 					</tr>
 					<tr>
 						<td>Name:</td>
-						<td><input type=text name="name" id="ip"></td>
+						<td><input type=text name="name" id="ip" placeholder="Enter Name"></td>
 					</tr>
 					<tr>
 						<td>Department:</td>
-						<td><input type=text name="department" id="ip"></td>
+						<td><input type=text name="department" id="ip" placeholder="Enter Department"></td>
 					</tr>
 					<tr>
 						<td>Salary:</td>
-						<td><input type=text name="salary" id="ip"></td>
+						<td><input type=text name="salary" id="ip" placeholder="Enter Salary"></td>
 					</tr>
 					<tr>
 						<td>Submit:</td>

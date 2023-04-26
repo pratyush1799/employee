@@ -29,6 +29,7 @@
 a {
 	margin: 20px;
 	width: 400px;
+	cursor: pointer;
 }
 a:link, a:visited {
   color: white;

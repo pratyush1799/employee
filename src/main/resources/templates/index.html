@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<title>Employee</title>
+	<link th:href="@{/css/style.css}" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="button_block">
+			<label style="font-size: 25px">Employee Management</label><br>
+			<a th:href="@{/addEmployeeForm}">Add Employee</a> <br>
+			<a th:href="@{/updateEmployeeForm}">Update Employee</a> <br>
+			<a th:href="@{/deleteEmployeeForm}">Delete Employee</a> <br>
+			<a th:href="@{/showEmployeeForm}">Show Employee</a> <br>
+			<a th:href="@{/getListForm}">Get List</a> <br>
+		</div>
+	</div>
+</body>
+</html>
