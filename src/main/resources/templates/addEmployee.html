@@ -8,22 +8,22 @@
 <body>
 	<div class="container">
 		<div class="login-form">
-			<form th:action="@{/addEmployee}" method="post">
+			<form th:action="@{/addEmployee}">
 				<div class="header">
 					<h2>Register</h2>
 				</div>
 				<table>
 					<tr>
 						<td>Name:</td>
-						<td><input type=text name="emp_name" id="ip" placeholder="Enter your name" th:field="name"></td>
+						<td><input type=text name="name" id="ip" placeholder="Enter your name"></td>
 					</tr>
 					<tr>
 						<td>Department:</td>
-						<td><input type=text name="department" id="ip" placeholder="Enter your department" th:field="department"></td>
+						<td><input type=text name="department" id="ip" placeholder="Enter your department"></td>
 					</tr>
 					<tr>
 						<td>Salary:</td>
-						<td><input type=text name="salary" id="ip" placeholder="Enter your salary" th:field="salary"></td>
+						<td><input type=text name="salary" id="ip" placeholder="Enter your salary"></td>
 					</tr>
 					<tr>
 						<td>Submit:</td>

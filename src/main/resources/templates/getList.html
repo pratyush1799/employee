@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<html>
 <head>
 <meta charset="UTF-8">
 <title>Employee</title>
@@ -11,7 +10,7 @@
 		<div class="row">
 			<h1>List of Employee</h1>
 		</div>
-		<table class="table table-striped table-bordered">
+		<table class="table table-striped table-bordered" th:action="@{/getList}">
 			<thead class="table-dark">
 				<tr>
 					<th>Emp Id</th>
@@ -21,11 +20,11 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr th:each = "employee: ${employee}">
-					<td th:text = "${employee.id}"></td>
-					<td th:text = "${student.name}"></td>
-					<td th:text = "${student.department}"></td>
-					<td th:text = "${student.salary}"></td>
+				<tr th:each = "empList: ${employee}">
+					<td th:text = "${empList.id}"></td>
+					<td th:text = "${empList.name}"></td>
+					<td th:text = "${empList.department}"></td>
+					<td th:text = "${empList.salary}"></td>
 				</tr>
 			</tbody>
 		</table>

@@ -31,4 +31,9 @@ public class EmployeeBean {
 	public void setSalary(double salary) {
 		this.salary = salary;
 	}
+	@Override
+	public String toString() {
+		return "EmployeeBean [id=" + id + ", name=" + name + ", department=" + department + ", salary=" + salary + "]";
+	}
+	
 }

@@ -4,9 +4,10 @@ create database employeeDB;
 use employeeDB;
 
 drop table if exists employee;
-create table Employee (
-	id int(11) primary key,
-	name varchar(25) not null,
-	department varchar(25) not null,
-	salary double not null
+create table employee (
+	id int(11) unsigned NOT NULL AUTO_INCREMENT,
+	name varchar(25) DEFAULT NULL,
+	department varchar(25) DEFAULT NULL,
+	salary double DEFAULT NULL,
+	PRIMARY KEY (id)
 );

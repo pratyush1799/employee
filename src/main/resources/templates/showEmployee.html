@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
 <title>Employee</title>
@@ -8,7 +8,7 @@
 <body>
 	<div class="container">
 		<div class="login-form">
-			<form action="/showEmployee">
+			<form th:action="@{/showEmployee}">
 				<div class="header">
 					<h2>Show Employee</h2>
 				</div>
