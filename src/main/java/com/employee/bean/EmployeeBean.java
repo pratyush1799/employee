@@ -35,5 +35,8 @@ public class EmployeeBean {
 	public String toString() {
 		return "EmployeeBean [id=" + id + ", name=" + name + ", department=" + department + ", salary=" + salary + "]";
 	}
+	public String getBean() {
+		return toString();
+	}
 	
 }

@@ -80,7 +80,7 @@ public class EmployeeController {
 		EmployeeBean bean = new EmployeeBean();
 		bean.setId(id);
 		EmployeeBean deletedBean = employeeService.deleteEmployee(bean);
-		System.out.println("deletedBean");
+		System.out.println(deletedBean);
 		return "index";
 	}
 	@GetMapping("/showEmployee")

@@ -36,4 +36,8 @@ public class EmployeeEntity {
 	public void setSalary(Double salary) {
 		this.salary = salary;
 	}
+	public String getEntity()
+	{
+		return toString();
+	}
 }
